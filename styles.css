@@ -53,7 +53,7 @@ svg:hover {
     color: #f75632;
 }
 
-a:link, a:visited{
+a:link, a:visited {
     text-decoration: none;
     color: #353434;
 }
@@ -77,6 +77,11 @@ h1 {
 
 h2 {
     font-size: 22px;
+    padding: 10px 0;
+}
+
+h3 {
+    font-size: 30px;
     padding: 10px 0;
 }
 
@@ -183,7 +188,7 @@ span {
     box-shadow: 3px 3px;      
 }
 
-.project h4 {
+.project h5 {
     font-family: monospace;
     padding-top: 15px;
     padding-bottom: 20px;
