@@ -76,8 +76,8 @@ h1 {
 }
 
 h2 {
+    font-size: 22px;
     padding: 10px 0;
-    font-size: 18px;
 }
 
 p {
@@ -133,7 +133,7 @@ p {
     border: 2px solid #353434;
     border-radius: 2px;
     box-shadow: 5px 5px;
-    margin-bottom: 20px;
+    margin: 40px 0 20px 0;
 }
 span {
     height: 2px;
@@ -147,13 +147,22 @@ span {
     width: 100%;
     display: flex;
     flex-direction: row;
+    margin-bottom: 40px;
 }
 .project-text {
     width: 50%;   
+    padding-right: 10px;
+    box-sizing: border-box;
 }
 .project-text svg:hover {
     color: #f75632;
     transition-duration: 0.4s;
+}
+
+.project-symbols {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .testar {
@@ -167,6 +176,13 @@ span {
 .project-image {
     width: 50%;
 }
+
+.project-image img {
+    border: 2px solid #353434;
+    border-radius: 2px;
+    box-shadow: 3px 3px;      
+}
+
 .project h4 {
     font-family: monospace;
     padding-top: 15px;
