@@ -257,7 +257,7 @@ span {
     border: 2px solid #353434;
     border-radius: 2px;
     box-shadow: 5px 5px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .contact-text {
@@ -290,6 +290,9 @@ footer {
     background-color: darkgray;
     color: white;
 }
+
+/* photo page */
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
     .filling {
