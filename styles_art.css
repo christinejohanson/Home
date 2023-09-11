@@ -1,0 +1,17 @@
+body {
+    background-color: #313532;
+    font-family: 'Bungee', Helvetica, Arial, cursive;
+}
+
+/* text */
+h1 {
+    font-size: 34px;
+}
+
+.artfilling {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 60px;
+    color: rgb(121, 161, 130);
+}
