@@ -189,6 +189,36 @@ body.travel-on .hero-section {
     transition-delay: 0ms;
 }
 
+body.collage-on .hero-section {
+    transform: rotateX(-10deg);
+    -webkit-transition-delay: 0ms;
+    transition-delay: 0ms;
+}
+
+body.portrait-on .hero-section {
+    transform: rotateX(-10deg);
+    -webkit-transition-delay: 0ms;
+    transition-delay: 0ms;
+}
+
+body.manmade-on .hero-section {
+    transform: rotateX(-10deg);
+    -webkit-transition-delay: 0ms;
+    transition-delay: 0ms;
+}
+
+body.wedding-on .hero-section {
+    transform: rotateX(-10deg);
+    -webkit-transition-delay: 0ms;
+    transition-delay: 0ms;
+}
+
+body.work-on .hero-section {
+    transform: rotateX(-10deg);
+    -webkit-transition-delay: 0ms;
+    transition-delay: 0ms;
+}
+
 body.wildlife-on .hero-section {
     transform: rotateX(-10deg);
     -webkit-transition-delay: 0ms;
@@ -412,7 +442,12 @@ body.contact-on .contact-section {
 
 .travel-section,
 .wildlife-section,
-.nature-section {
+.nature-section,
+.collage-section,
+.portrait-section,
+.manmade-section,
+.wedding-section, 
+.work-section {
     position: fixed;
     top: 100%;
     left: 0;
@@ -430,7 +465,12 @@ body.contact-on .contact-section {
 
 .travel-close,
 .wildlife-close,
-.nature-close {
+.nature-close,
+.collage-close,
+.portrait-close,
+.manmade-close,
+.wedding-close,
+.work-close {
     position: absolute;
     top: 20px;
     right: 20px;
@@ -450,11 +490,46 @@ body.contact-on .contact-section {
 
 .travel-close:hover,
 .wildlife-close:hover,
-.nature-close:hover {
+.nature-close:hover, 
+.collage-close:hover,
+.portrait-close:hover,
+.manmade-close:hover,
+.wedding-close:hover,
+.work-close:hover {
     transform: rotate(90deg);
 }
 
 body.travel-on .travel-section {
+    top: 0;
+    -webkit-transition-delay: 400ms;
+    transition-delay: 400ms;
+}
+
+body.collage-on .collage-section {
+    top: 0;
+    -webkit-transition-delay: 400ms;
+    transition-delay: 400ms;
+}
+
+body.manmade-on .manmade-section {
+    top: 0;
+    -webkit-transition-delay: 400ms;
+    transition-delay: 400ms;
+}
+
+body.portrait-on .portrait-section {
+    top: 0;
+    -webkit-transition-delay: 400ms;
+    transition-delay: 400ms;
+}
+
+body.wedding-on .wedding-section {
+    top: 0;
+    -webkit-transition-delay: 400ms;
+    transition-delay: 400ms;
+}
+
+body.work-on .work-section {
     top: 0;
     -webkit-transition-delay: 400ms;
     transition-delay: 400ms;
@@ -474,7 +549,12 @@ body.nature-on .nature-section {
 
 .travel-section img,
 .wildlife-section img,
-.nature-section img {
+.nature-section img,
+.collage-section img,
+.portrait-section img,
+.manmade-section img,
+.wedding-section img,
+.work-section img {
     margin-top: 30px;
     width: 100%;
     height: auto;
@@ -485,7 +565,12 @@ body.nature-on .nature-section {
 
 .travel-section h3,
 .wildlife-section h3,
-.nature-section h3 {
+.nature-section h3,
+.collage-section h3,
+.portrait-section h3,
+.manmade-section h3,
+.wedding-section h3,
+.work-section h3 {
     font-size: 7vw;
     line-height: 1;
     font-weight: 700;
@@ -495,7 +580,12 @@ body.nature-on .nature-section {
 
 .travel-section p,
 .wildlife-section p,
-.nature-section p {
+.nature-section p,
+.collage-section p,
+.portrait-section p,
+.manmade-section p,
+.wedding-section p,
+.work-section p {
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 1px;
@@ -504,7 +594,12 @@ body.nature-on .nature-section {
 
 .travel-section p span,
 .wildlife-section p span,
-.nature-section p span {
+.nature-section p span,
+.collage-section p span,
+.portrait-section p span,
+.manmade-section p span,
+.wedding-section p span,
+.work-section p span {
     font-size: 20px;
     line-height: 1.3;
     font-weight: 700;
@@ -559,7 +654,9 @@ body.nature-on .nature-section {
 
     .travel-section h3,
     .wildlife-section h3,
-    .nature-section h3 {
+    .nature-section h3,
+    .collage-section h3,
+    .portrait-section h3 {
         font-size: 13vw;
     }
 }
