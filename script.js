@@ -114,8 +114,8 @@
 	});
 	$(".nature-close").on('click', function () {
 		$("body").removeClass("nature-on");
-	});
-
+    });
+    
 })(jQuery);
 
 

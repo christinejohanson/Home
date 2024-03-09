@@ -15,7 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Bungee&family=DM+Serif+Display&family=Montserrat:wght@300&family=Nova+Cut&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Slab&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles_photo.css" />
   </head>
   <body>
     <div class="hero-section">
@@ -50,7 +50,7 @@
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-12 text-center">
-              <img src="img_photo/islandsjaget.jpg" alt="porträtt c johanson" />
+              <img src="img_photo/jag_ottsjo.jpg" alt="porträtt c johanson" />
             </div>
             <div class="col-lg-8 text-center mt-3">
               <p class="mb-1">
@@ -120,7 +120,77 @@
                 >studion åre</a
               >
             </div>
-            <form>
+            <!-- <form>
+              <p>Contact form</p>
+              <div class="form-group">
+                <!-- <label for="email">Email address:</label> 
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Enter email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <!-- <label for="message">Message:</label> 
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="5"
+                  placeholder="Enter your message"
+                  required
+                ></textarea>
+              </div>
+              <div class="form-group">
+                <label for="checkboxes">I´m interested in:</label><br />
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="option1"
+                    value="option1"
+                  />
+                  <label class="form-check-label" for="option1">Art</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="option2"
+                    value="option2"
+                  />
+                  <label class="form-check-label" for="option2"
+                    >Photo session</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="option3"
+                    value="option3"
+                  />
+                  <label class="form-check-label" for="option3"
+                    >Interesting project</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="option4"
+                    value="option4"
+                  />
+                  <label class="form-check-label" for="option4"
+                    >Something else</label
+                  >
+                </div>
+              </div>
+              <button type="submit" class="btn btn-light">Submit</button>
+            </form> -->
+
+            <form id="contactForm">
               <p>Contact form</p>
               <div class="form-group">
                 <!-- <label for="email">Email address:</label> -->
@@ -189,6 +259,17 @@
               </div>
               <button type="submit" class="btn btn-light">Submit</button>
             </form>
+
+            <script>
+              document
+                .getElementById("contactForm")
+                .addEventListener("submit", function (event) {
+                  // Prevent default form submission
+                  event.preventDefault();
+                  // Redirect to another page
+                  window.location.href = "duck.html";
+                });
+            </script>
           </div>
         </div>
       </div>
