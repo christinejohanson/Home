@@ -1,5 +1,4 @@
 body {
-    /* font-family: 'Poppins', sans-serif; */
     font-family: 'DM Serif Display', serif;
     font-weight: 300;
     font-size: 15px;
@@ -87,7 +86,6 @@ form {
 } */
 
 @media screen and (max-width: 1200px) {
-
     .cursor,
     .cursor2,
     .cursor3 {
@@ -104,7 +102,7 @@ form {
     display: block;
     overflow: hidden;
     height: 100vh;
-    background-image: url("img_photo/skutan_froa.jpg");
+    background-image: url("img_photo/skutan_froa_komp.jpg");
     background-size: cover;
     background-position: center;
     transform: scale(1) rotateX(0);
@@ -123,32 +121,6 @@ form {
     line-height: 1;
     font-weight: 900;
 }
-
-/* .hero-section .dancing {
-    letter-spacing: 1px;
-    color: #d8db9b;
-    font-size: 25px;
-    line-height: 1;
-    font-weight: 700;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    transform: translateY(-175px) rotate(-45deg);
-    z-index: 2;
-} */
-
-/* .hero-section .dancing span {
-    padding: 8px 15px;
-    padding-right: 10px;
-    display: inline-block;
-    border-radius: 5px;
-    background-color: #525356;
-} */
-
-/* @media screen and (max-width: 580px) {
-    .hero-section .dancing {
-        font-size: 18px;
-    }
-} */
 
 .hero-section p {
     font-size: 20px;
@@ -415,6 +387,7 @@ body.contact-on .contact-section {
     transition-duration: 0.4s;
 }
 
+/* MEDIA MAX 580PX */
 @media screen and (max-width: 580px) {
     .contact-section a {
         font-size: 17px;
@@ -587,14 +560,7 @@ body.nature-on .nature-section {
     mix-blend-mode: difference;
 }
 
-
-/* @media (max-width: 1200px) {
-    .hero-section .dancing {
-        font-size: 15px;
-        transform: translateY(-80px) rotate(-45deg);
-    }
-} */
-
+/* MEDIA MAX 967PX */
 @media (max-width: 967px) {
     .hero-section h1 {
         font-size: 11vw;
@@ -622,5 +588,3 @@ body.nature-on .nature-section {
         font-size: 13vw;
     }
 }
-
-/* DUCK STYLE */
