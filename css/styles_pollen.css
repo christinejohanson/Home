@@ -14,11 +14,12 @@ main {
     margin-top: 100px;
     padding: 20px;
     border-radius: 10px;
+    box-shadow: 5px 5px 15px #888888;
 }
 
 h1 {
     font-family: Montserrat;
-    font-size: 80px;
+    font-size: 60px;
     color: #EF4F47;
     margin-top: 20px;
     margin-bottom: 0px;
