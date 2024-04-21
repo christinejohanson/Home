@@ -340,6 +340,12 @@ body.contact-on .contact-section {
         font-size: 13px;
         letter-spacing: 0;
     }
+
+    /* få till scroll */
+    body.about-on,
+    body.contact-on {
+        overflow: auto;
+    }
 }
 
 .nature-section,
@@ -419,13 +425,13 @@ body.wedding-on .wedding-section {
     transition-delay: 400ms;
 }
 
-body.work-on .work-section {
+body.nature-on .nature-section {
     top: 0;
     -webkit-transition-delay: 400ms;
     transition-delay: 400ms;
 }
 
-body.nature-on .nature-section {
+body.work-on .work-section {
     top: 0;
     -webkit-transition-delay: 400ms;
     transition-delay: 400ms;
