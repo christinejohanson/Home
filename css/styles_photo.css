@@ -346,6 +346,10 @@ body.contact-on .contact-section {
     body.contact-on {
         overflow: auto;
     }
+
+    #contactForm {
+        width: 90%;
+    }
 }
 
 .nature-section,
