@@ -89,6 +89,16 @@ body.about-on .hero-section {
     -webkit-transition-delay: 0ms;
     transition-delay: 0ms;
 }
+/* try to not display portfolio sections */
+/* body.about-on .work-section
+body.about-on .contact-section,
+body.about-on .nature-section,
+body.about-on .collage-section,
+body.about-on .portrait-section,
+body.about-on .manmade-section,
+body.about-on .wedding-section  {
+    display: none;
+} */
 
 body.contact-on .hero-section {
     transform: scale(0.75);
@@ -132,6 +142,7 @@ body.nature-on .hero-section {
     transition-delay: 0ms;
 }
 
+/* ABOUT SETTINGS */
 .about-text {
     position: absolute;
     font-size: 30px;
@@ -233,6 +244,7 @@ body.about-on .about-section {
     font-weight: 700;
 }
 
+/* CONTACT SETTINGS */
 .contact-text {
     position: absolute;
     font-size: 30px;
@@ -522,8 +534,7 @@ body.work-on .work-section {
     }
 
     .hero-section p span {
-        margin-left: 10px;
-        margin-right: 10px;
+        margin: 20px 10px 0 10px;
     }
 
 /* BEHÖVER EVENTUELLT ÄNDRA DENNA */    
