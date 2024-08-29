@@ -14,7 +14,7 @@ document.getElementById("imageduck").onclick = function () {
         }
     }
 
-    var text = "Sorry for the inconvenience! The form is not in function yet! Go back to index.";
+    var text = "Sorry for the inconvenience! The form is not in function yet! Contact me through email: info@christinejohanson.se";
     var container = document.getElementById("textContainer");
     var index = 0;
 
