@@ -224,6 +224,22 @@ span {
     margin-bottom: 20px;
 }
 
+.photographer {
+    background-color: #f75632;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #353434;
+    border-radius: 2px;
+    box-shadow: 5px 5px;
+    margin-bottom: 20px;
+}
+
+.photographer:hover {
+    background-color: black;
+    transition-duration: 0.4s;
+}
+
 /* article {
     width: 60%;
     background-color: bisque;
@@ -330,7 +346,7 @@ footer {
         width: 32px;
         height: 32px;
     }
-    .about, .contact{
+    .about, .photographer, .contact{
         padding: 10px 40px 30px;
     }
     .filling {
@@ -340,7 +356,7 @@ footer {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-    .about, .contact {
+    .about, .contact, .photographer {
         padding: 10px 100px 30px;
     }
 }
