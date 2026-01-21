@@ -18,12 +18,62 @@ h1 {
     font-size: 80px;
     color: #EF4F47;
     margin-top: 20px;
-    margin-bottom: 0px;
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-size: 30px;
+    color: rgb(112, 108, 103);
 }
 
 p {
     color:rgb(112, 108, 103);
     font-size: 20px;
+}
+
+.card {
+    border: 2px solid #f0f0f0;
+    border-radius: 8px;
+    margin: 8px 0;
+    overflow: hidden;
+}
+.card:hover {
+    border: 2px solid #e0e0e0;
+}
+
+.card-header {
+    background: #f0f0f0;
+    transition: background-color 0.5s ease;
+    padding: 12px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.card-header:hover {
+    background: #e0e0e0;
+}
+
+
+.card-details {
+    background-color: #f0f0f0;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 12px;
+    opacity: 0;
+    /*transform: translateY(-5px); */
+    transition: max-height 0.5s ease-in-out,
+            padding 0.5s ease,
+            opacity 0.5s ease-in-out, 
+            /* tid för öppna card */
+            transform 0.5s ease;
+}
+
+.card-details.open {
+    max-height: 700px;
+    opacity: 1;
+    /* kan justeras efter behov */
+    padding: 12px;
+   /* transform: translateY(0);*/
 }
 
 @media screen and (max-width: 899px) {

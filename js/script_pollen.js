@@ -11,11 +11,18 @@ fetch('https://api.pollenrapporten.se/v1/regions')
         return response.json();
     })
     .then((data) => {
-       // console.log(data);
+        console.log(data);
+        //för att ta ut namnet på nr 22
+        //const regionName = data.items[22].name;
         //get a list w all the regions
-        const regionName = data.items[22].name;
-        //const regionsString = regionNames.join(", ");
-        pollenStats.innerHTML = `<h1>${regionName}</h1>`;            
+        const regionName = data.items.map(region => region.name);
+        //join tar alla element i arrayen o skapar en sträng
+        const regionsString = regionName.join(", ");
+        console.log(regionsString);
+        //rubrik med array som kommaseparerad sträng
+        //pollenStats.innerHTML = `<h1>${regionName}</h1>`; 
+        //använder join för att skriva ut med , och mellanslag
+        pollenStats.innerHTML = `<h2>${regionName.join(", ")}</h2>`;
     })    
 
 ////////////////
