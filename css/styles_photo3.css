@@ -4,10 +4,9 @@ body {
     font-size: 15px;
     line-height: 1.6;
     color: #fff;
-    background-color: rgb(89, 87, 88);
+    /* FIXA BAKGRUNDSFÄRGEN */
+    background-color: rgb(139, 71, 92);
     overflow: hidden;
-    overflow-x: hidden;
-    /* Förhindra horisontell scroll */
     height: 100vh;
     -webkit-transition: all 300ms linear;
     transition: all 300ms linear;
@@ -28,7 +27,6 @@ form {
 }
 
 @media screen and (max-width: 1200px) {
-
     .cursor,
     .cursor2,
     .cursor3 {
@@ -87,27 +85,59 @@ form {
 }
 
 body.about-on .hero-section {
-    opacity: 0.3;
-    /* Lägg till lite fade */
+    transform: scale(0.75);
     -webkit-transition-delay: 0ms;
     transition-delay: 0ms;
 }
+/* try to not display portfolio sections */
+/* body.about-on .work-section
+body.about-on .contact-section,
+body.about-on .nature-section,
+body.about-on .collage-section,
+body.about-on .portrait-section,
+body.about-on .manmade-section,
+body.about-on .wedding-section  {
+    display: none;
+} */
 
 body.contact-on .hero-section {
-    opacity: 0.3;
-    /* Lägg till lite fade */
+    transform: scale(0.75);
     -webkit-transition-delay: 0ms;
     transition-delay: 0ms;
 }
 
-body.collage-on .hero-section,
-body.portrait-on .hero-section,
-body.manmade-on .hero-section,
-body.wedding-on .hero-section,
-body.work-on .hero-section,
+body.collage-on .hero-section {
+    transform: rotateX(-10deg);
+    -webkit-transition-delay: 0ms;
+    transition-delay: 0ms;
+}
+
+body.portrait-on .hero-section {
+    transform: rotateX(-10deg);
+    -webkit-transition-delay: 0ms;
+    transition-delay: 0ms;
+}
+
+body.manmade-on .hero-section {
+    transform: rotateX(-10deg);
+    -webkit-transition-delay: 0ms;
+    transition-delay: 0ms;
+}
+
+body.wedding-on .hero-section {
+    transform: rotateX(-10deg);
+    -webkit-transition-delay: 0ms;
+    transition-delay: 0ms;
+}
+
+body.work-on .hero-section {
+    transform: rotateX(-10deg);
+    -webkit-transition-delay: 0ms;
+    transition-delay: 0ms;
+}
+
 body.nature-on .hero-section {
-    opacity: 0.3;
-    /* Lägg till lite fade */
+    transform: rotateX(-10deg);
     -webkit-transition-delay: 0ms;
     transition-delay: 0ms;
 }
@@ -148,19 +178,16 @@ body.nature-on .hero-section {
     height: 100vh;
     background-color: #525356;
     transform: translateX(-100%);
-    -webkit-transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.4s ease;
-    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.4s ease;
-    opacity: 0;
-    pointer-events: none;
+    /* -webkit-transition: all 300ms linear;
+    transition: all 300ms linear; */
+    transition: transform 1s ease;
     z-index: 10;
 }
 
 body.about-on .about-section {
     transform: translateX(0);
-    opacity: 1;
-    pointer-events: auto;
-    -webkit-transition-delay: 0ms;
-    transition-delay: 0ms;
+    -webkit-transition-delay: 400ms;
+    transition-delay: 400ms;
 }
 
 .about-close {
@@ -253,19 +280,16 @@ body.about-on .about-section {
     height: 100vh;
     background-color: #525356;
     transform: translateX(100%);
-    -webkit-transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.4s ease;
-    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.4s ease;
-    opacity: 0;
-    pointer-events: none;
+    /* -webkit-transition: all 300ms linear;
+    transition: all 300ms linear; */
+    transition: transform 1s ease;
     z-index: 10;
 }
 
 body.contact-on .contact-section {
     transform: translateX(0);
-    opacity: 1;
-    pointer-events: auto;
-    -webkit-transition-delay: 0ms;
-    transition-delay: 0ms;
+    -webkit-transition-delay: 400ms;
+    transition-delay: 400ms;
 }
 
 .contact-close {
@@ -340,12 +364,11 @@ body.contact-on .contact-section {
     }
 }
 
-/* PORTFOLIO SECTIONS - KOMMER FRÅN BOTTEN */
 .nature-section,
 .collage-section,
 .portrait-section,
 .manmade-section,
-.wedding-section,
+.wedding-section, 
 .work-section {
     position: fixed;
     top: 100%;
@@ -357,24 +380,9 @@ body.contact-on .contact-section {
     overflow-x: hidden;
     overflow-y: auto;
     background-color: #525356;
-    -webkit-transition: top 0.5s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.4s ease;
-    transition: top 0.5s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.4s ease;
-    opacity: 0;
-    pointer-events: none;
+    -webkit-transition: all 300ms linear;
+    transition: all 300ms linear;
     z-index: 10;
-}
-
-body.collage-on .collage-section,
-body.manmade-on .manmade-section,
-body.portrait-on .portrait-section,
-body.wedding-on .wedding-section,
-body.nature-on .nature-section,
-body.work-on .work-section {
-    top: 0;
-    opacity: 1;
-    pointer-events: auto;
-    -webkit-transition-delay: 0ms;
-    transition-delay: 0ms;
 }
 
 .nature-close,
@@ -400,13 +408,49 @@ body.work-on .work-section {
     z-index: 11;
 }
 
-.nature-close:hover,
+.nature-close:hover, 
 .collage-close:hover,
 .portrait-close:hover,
 .manmade-close:hover,
 .wedding-close:hover,
 .work-close:hover {
     transform: rotate(90deg);
+}
+
+body.collage-on .collage-section {
+    top: 0;
+    -webkit-transition-delay: 400ms;
+    transition-delay: 400ms;
+}
+
+body.manmade-on .manmade-section {
+    top: 0;
+    -webkit-transition-delay: 400ms;
+    transition-delay: 400ms;
+}
+
+body.portrait-on .portrait-section {
+    top: 0;
+    -webkit-transition-delay: 400ms;
+    transition-delay: 400ms;
+}
+
+body.wedding-on .wedding-section {
+    top: 0;
+    -webkit-transition-delay: 400ms;
+    transition-delay: 400ms;
+}
+
+body.nature-on .nature-section {
+    top: 0;
+    -webkit-transition-delay: 400ms;
+    transition-delay: 400ms;
+}
+
+body.work-on .work-section {
+    top: 0;
+    -webkit-transition-delay: 400ms;
+    transition-delay: 400ms;
 }
 
 .nature-section img,
@@ -493,7 +537,7 @@ body.work-on .work-section {
         margin: 20px 10px 0 10px;
     }
 
-    /* BEHÖVER EVENTUELLT ÄNDRA DENNA */
+/* BEHÖVER EVENTUELLT ÄNDRA DENNA */    
     .col-12 {
         max-width: 80%;
     }
